@@ -337,6 +337,66 @@ code {
 .prose { max-width: 62ch; }
 .prose p { margin: 0 0 1rem; }
 
+/* About: text beside two photo spots (3:4 portrait and 1:1 square) */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.photos {
+  display: flex;
+  align-items: flex-end;
+  gap: 1.25rem;
+  padding-right: 8px;
+  padding-bottom: 8px;
+}
+
+.photo {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+  background: var(--tint);
+  border: 2px solid var(--ink);
+  border-radius: 2px;
+}
+
+.photo::before {
+  content: "Add " attr(data-file);
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 0.5rem;
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--muted);
+}
+
+.photo img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.photo-portrait {
+  flex: 3;
+  aspect-ratio: 3 / 4;
+  box-shadow: 8px 8px 0 var(--signal);
+}
+
+.photo-square {
+  flex: 2;
+  aspect-ratio: 1 / 1;
+  box-shadow: 8px 8px 0 var(--cobalt);
+}
+
 /* Relationship rail: dashed line from the developer table to each project */
 
 .rail {
@@ -485,6 +545,13 @@ footer p { margin: 0; }
   }
 
   .hero-card { margin-right: 10px; }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .photos { max-width: 460px; }
 }
 
 @media (max-width: 640px) {
