@@ -3,17 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name | Portfolio</title>
-  <meta name="description" content="Portfolio of Your Name, a [your profession].">
+  <title>Kenneth Ariel Kesuma | Web Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Kenneth Ariel Kesuma, an Informatics Engineering graduate focused on web development, databases, and Laravel.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <header class="site-header">
-    <a class="logo" href="#top">Your Name</a>
+    <a class="logo" href="#top">Kenneth Ariel Kesuma</a>
     <nav>
       <a href="#about">About</a>
+      <a href="#education">Education</a>
       <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#certifications">Certifications</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -21,65 +24,187 @@
   <main id="top">
 
     <section class="hero">
-      <p class="eyebrow">Hello, I'm</p>
-      <h1>Your Name</h1>
-      <p class="tagline">I'm a [your profession] who [what you do or care about].</p>
-      <a class="button" href="#projects">See my work</a>
+      <div class="hero-text">
+        <p class="eyebrow">Hello, I'm</p>
+        <h1>Kenneth Ariel Kesuma</h1>
+        <p class="role">Web Developer &middot; Software Engineer &middot; Game Developer</p>
+        <p class="tagline">
+          Informatics Engineering graduate who builds web applications with
+          PHP Laravel and well-designed databases.
+        </p>
+        <div class="actions">
+          <a class="button" href="#projects">See my projects</a>
+          <a class="button ghost" href="#contact">Contact me</a>
+        </div>
+      </div>
+      <img class="photo" src="photo.jpg" alt="Portrait of Kenneth Ariel Kesuma" onerror="this.style.display='none'">
     </section>
 
     <section id="about">
       <h2>About me</h2>
       <p>
-        Write two or three sentences about who you are, what you do, and what
-        you are looking for. Keep it friendly and specific.
+        I am a fresh graduate in Informatics Engineering from Satya Wacana
+        Christian University, with academic exposure to database development,
+        UI/UX design, and data security. I have built a company profile website
+        and several church web applications, growing my front-end and back-end
+        skills along with teamwork and leadership.
       </p>
-      <ul class="skills">
-        <li>Skill one</li>
-        <li>Skill two</li>
-        <li>Skill three</li>
-        <li>Skill four</li>
-      </ul>
+      <p>
+        I enjoy problem solving and creative thinking, and I am motivated to bring
+        theoretical knowledge into real-world practice. I am interested in a career
+        as a Web Developer, Software Engineer, or Game Developer.
+      </p>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <article class="card">
+        <div class="card-head">
+          <h3>Universitas Kristen Satya Wacana, Salatiga</h3>
+          <span class="date">Aug 2022 &ndash; Sep 2026</span>
+        </div>
+        <p class="sub">Informatics Engineering &middot; GPA 3.76 / 4.00</p>
+        <p><strong>Relevant courses:</strong> Database Design, Database Programming,
+          Web Programming / Web Development, Database Systems, Software Engineering,
+          Data Security, UI/UX Design, Platform-Oriented Programming.</p>
+      </article>
     </section>
 
     <section id="projects">
       <h2>Projects</h2>
-      <div class="grid">
 
-        <article class="card">
-          <h3>Project One</h3>
-          <p>A short description of what the project is and what you did.</p>
-          <a href="#">View project</a>
-        </article>
+      <article class="card">
+        <div class="card-head">
+          <h3>Web Database Management &ldquo;Gereja Calvary Cirebon&rdquo;</h3>
+          <span class="date">Oct 2026</span>
+        </div>
+        <p class="sub">Full-stack Developer</p>
+        <ul>
+          <li>Developed a web-based database management system with user and 4 admin roles (super-admin, admin, staff, and admin-view-only).</li>
+          <li>Managed tasks across front-end, back-end, database design, documentation, and interviews.</li>
+          <li>Built the back-end with PHP Laravel and designed the MySQL database architecture.</li>
+          <li>Coordinated with 2 internal members from Gereja Calvary Cirebon and achieved great satisfaction.</li>
+          <li>Used Git for smooth synchronization and hosting in web development.</li>
+        </ul>
+        <p class="tags"><span>PHP</span><span>Laravel</span><span>MySQL</span><span>Git</span></p>
+      </article>
 
-        <article class="card">
-          <h3>Project Two</h3>
-          <p>A short description of what the project is and what you did.</p>
-          <a href="#">View project</a>
-        </article>
+      <article class="card">
+        <div class="card-head">
+          <h3>Web Application &ldquo;Gereja Calvary Cirebon&rdquo;</h3>
+          <span class="date">Jan 2026 &ndash; Sep 2026</span>
+        </div>
+        <p class="sub">Project Leader, Back-end &amp; Database Developer</p>
+        <ul>
+          <li>Developed a web application with user and 3 admin roles (super-admin, staff, and admin-view-only).</li>
+          <li>Led a 3-member team across front-end, back-end, database design, hosting, documentation, and interviews.</li>
+          <li>Built a working QR code generator and scanner for church members and staff.</li>
+          <li>Built 7 database management modules for the super-admin.</li>
+          <li>Built the back-end with PHP Laravel and designed the MySQL database architecture.</li>
+          <li>Worked with 2 internal members from Gereja Calvary Cirebon; earned an "A" academic grade and a "Great" satisfaction rating.</li>
+          <li>Used Git for collaboration and synchronization within the team.</li>
+        </ul>
+        <p class="tags"><span>PHP</span><span>Laravel</span><span>MySQL</span><span>QR Code</span><span>Git</span></p>
+      </article>
 
-        <article class="card">
-          <h3>Project Three</h3>
-          <p>A short description of what the project is and what you did.</p>
-          <a href="#">View project</a>
-        </article>
+      <article class="card">
+        <div class="card-head">
+          <h3>Company Profile &ldquo;Kolam Renang Kalitaman&rdquo; Website</h3>
+          <span class="date">Apr 2023 &ndash; Jul 2023</span>
+        </div>
+        <p class="sub">Project Leader, Back-end &amp; Database Developer</p>
+        <ul>
+          <li>Developed a company profile website with 7 core features, including CRUD modules, backed by 8 SQL database tables.</li>
+          <li>Led a 3-member team across front-end, back-end, database design, documentation, and stakeholder interviews.</li>
+          <li>Managed and delivered 16 project milestones over a 4-month cycle, on time.</li>
+          <li>Built the back-end with PHP Laravel and designed the SQL database architecture.</li>
+          <li>Coordinated with 4 stakeholders from the Salatiga Tourism Office; earned an "A" academic grade and a "Good" satisfaction rating.</li>
+        </ul>
+        <p class="tags"><span>PHP</span><span>Laravel</span><span>SQL</span></p>
+      </article>
+    </section>
 
-      </div>
+    <section id="skills">
+      <h2>Skills</h2>
+      <h3>Hard skills</h3>
+      <ul class="pills">
+        <li>SQL Database</li><li>PHP</li><li>JavaScript</li><li>Java</li>
+        <li>Laravel</li><li>Bootstrap</li><li>Git</li><li>Excel</li>
+        <li>Word</li><li>Canva</li><li>AI</li>
+      </ul>
+      <h3>Soft skills</h3>
+      <ul class="pills">
+        <li>Problem Solving</li><li>Teamwork</li><li>Leadership</li><li>Creative</li>
+        <li>Flexibility</li><li>Critical Thinking</li><li>Multitasking</li><li>Cooperation</li>
+      </ul>
+    </section>
+
+    <section id="certifications">
+      <h2>Trainings &amp; Certifications</h2>
+
+      <article class="card">
+        <div class="card-head">
+          <h3>Database Design, Oracle Academy</h3>
+          <span class="date">Dec 2024</span>
+        </div>
+        <ul>
+          <li>Designed a structured, efficient database schema.</li>
+          <li>Created Entity Relationship Diagrams (ERD) to model system data requirements.</li>
+          <li>Translated ERD designs into relational table structures.</li>
+          <li>Applied normalization (1NF, 2NF, 3NF) to reduce redundancy and keep data consistent.</li>
+          <li>Implemented and managed a relational database for application functionality.</li>
+          <li>Achieved an "A" grade for the project/coursework.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <h3>Database Programming, Oracle Academy</h3>
+          <span class="date">Dec 2024</span>
+        </div>
+        <ul>
+          <li>Applied database design principles within a functional application.</li>
+          <li>Wrote CRUD operations to interact with database tables.</li>
+          <li>Used SQL queries within PHP to manage and manipulate data.</li>
+          <li>Achieved an "A" grade for the project/coursework.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <h3>Latihan Dasar Kepemimpinan Mahasiswa</h3>
+          <span class="date">Jun 2023</span>
+        </div>
+        <p class="sub">Student Leadership Basic Training</p>
+        <ul>
+          <li>Took part in leadership and teamwork training in a 15-member group.</li>
+          <li>Joined seminars, mentoring sessions, and team-based games to strengthen collaboration and leadership skills.</li>
+        </ul>
+      </article>
+
+      <h3 class="other">Workshops &amp; webinars</h3>
+      <ul class="plain">
+        <li><strong>Workshop:</strong> Cybersecurity, "Penetration Test for Web Security" (2024)</li>
+        <li><strong>Webinars:</strong> ASEAN Data Science Explorers 2023 &ndash; SAP Analytics Cloud; Komunikasi Interaktif di Google Workspace for Education PLUS (2023)</li>
+      </ul>
     </section>
 
     <section id="contact">
       <h2>Contact</h2>
-      <p>Want to work together? Get in touch.</p>
-      <p>
-        <a href="mailto:you@example.com">you@example.com</a><br>
-        <a href="https://github.com/yourusername">GitHub</a> ·
-        <a href="https://linkedin.com/in/yourusername">LinkedIn</a>
+      <p>Interested in working together or want to know more? Get in touch.</p>
+      <p class="links">
+        <a href="mailto:kenarkes@gmail.com">kenarkes@gmail.com</a>
+        <a href="https://www.linkedin.com/in/kenarkes" target="_blank" rel="noopener">LinkedIn</a>
+        <!-- Add your GitHub link here once your username is final:
+        <a href="https://github.com/YOURUSERNAME" target="_blank" rel="noopener">GitHub</a> -->
       </p>
+      <p class="muted">Based in Cirebon, Indonesia</p>
     </section>
 
   </main>
 
   <footer>
-    <p>&copy; 2026 Your Name</p>
+    <p>&copy; 2026 Kenneth Ariel Kesuma</p>
   </footer>
 
 </body>
