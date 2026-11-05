@@ -1,0 +1,126 @@
+:root {
+  --bg: #fafaf8;
+  --text: #1f2328;
+  --muted: #5c636a;
+  --accent: #2f6fed;
+  --card: #ffffff;
+  --border: #e4e4e0;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+a { color: var(--accent); }
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-weight: 700;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.site-header nav a {
+  margin-left: 1.25rem;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.site-header nav a:hover { color: var(--accent); }
+
+main, footer {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+section { padding: 3rem 0; }
+
+.hero { padding: 5rem 0 4rem; }
+
+.eyebrow {
+  color: var(--muted);
+  margin: 0;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 8vw, 4rem);
+  margin: 0.25rem 0 1rem;
+  line-height: 1.1;
+}
+
+h2 { font-size: 1.75rem; margin-top: 0; }
+
+.tagline {
+  font-size: 1.2rem;
+  color: var(--muted);
+  max-width: 36rem;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.7rem 1.4rem;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.button:hover { opacity: 0.9; }
+
+.skills {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skills li {
+  padding: 0.3rem 0.8rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--card);
+  font-size: 0.9rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.25rem;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.25rem;
+}
+
+.card h3 { margin-top: 0; }
+
+footer {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+  font-size: 0.9rem;
+}
